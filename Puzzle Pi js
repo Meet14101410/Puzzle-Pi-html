@@ -1,0 +1,10 @@
+function checkPi(){
+  let answer = document.getElementById("answer").value;
+
+  if(answer == "3.14"){
+    document.getElementById("result").innerHTML = "Correct! 🎉";
+  }
+  else{
+    document.getElementById("result").innerHTML = "Wrong! Try again.";
+  }
+}
