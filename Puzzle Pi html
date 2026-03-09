@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Puzzle Pi</title>
+</head>
+<body>
+
+<h2>Puzzle Pi Game</h2>
+<p>Guess the value of Pi (3.14)</p>
+
+<input type="text" id="answer" placeholder="Enter value">
+<button onclick="checkPi()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function checkPi() {
+  let ans = document.getElementById("answer").value;
+  if(ans == "3.14"){
+    document.getElementById("result").innerHTML = "Correct! 🎉";
+  } else {
+    document.getElementById("result").innerHTML = "Try Again!";
+  }
+}
+</script>
+
+</body>
+</html>
